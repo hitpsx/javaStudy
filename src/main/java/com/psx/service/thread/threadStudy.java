@@ -1,4 +1,4 @@
-package com.psx.service;
+package com.psx.service.thread;
 
 
 class threadClass extends Thread {
