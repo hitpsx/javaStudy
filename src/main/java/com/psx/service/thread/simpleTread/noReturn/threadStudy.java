@@ -1,4 +1,4 @@
-package com.psx.service.thread;
+package com.psx.service.thread.simpleTread.noReturn;
 
 
 class threadClass extends Thread {
