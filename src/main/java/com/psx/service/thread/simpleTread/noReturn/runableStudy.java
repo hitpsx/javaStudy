@@ -13,8 +13,7 @@ class runableClass implements Runnable {
         }
     }
 }
-//首次提交
-
+// 测试第二次
 public class runableStudy {
     public static void main(String[] args) {
         runableClass a = new runableClass("hello");
