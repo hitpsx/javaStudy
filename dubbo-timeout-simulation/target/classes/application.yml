@@ -1,0 +1,43 @@
+server:
+  port: 8088
+  tomcat:
+    threads:
+      max: 500
+      min-spare: 50
+    max-connections: 1000
+
+spring:
+  application:
+    name: dubbo-demo
+
+dubbo:
+  application:
+    name: dubbo-demo
+    metadata-type: local
+    qos-enable: false
+  protocol:
+    name: dubbo
+    port: 20880
+    threads: 500
+    accepts: 1000
+    serialization: hessian2
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    session: 60000
+    timeout: 10000
+  consumer:
+    timeout: 3000
+    retries: 0
+    check: false
+    lazy: true
+  provi der:
+    timeout: 5000
+    retries: 0
+    check: false
+  scan:
+    base-packages: com.example.dubbo
+
+logging:
+  level:
+    com.example.dubbo: INFO
+    org.apache.dubbo: WARN
